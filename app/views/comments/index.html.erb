@@ -1,0 +1,6 @@
+<ol>
+  <%= content_tag_for(:li, @comments) do |comment| %>
+    <%= simple_format comment.body %>
+    by <%= partial_email comment.email %>
+  <% end %>
+</ol>

@@ -7,10 +7,10 @@ describe CommentViaEmail do
     comment.should be_a Comment
     comment.should be_persisted
     comment.email.should eq fake_email.from
-    comment.body.should eq fake_email.html_body
+    comment.body.should eq fake_email.body
   end
 
   def fake_email
-    OpenStruct.new(from: 'caleb@thoughtbot.com', html_body: 'Hey, Caleb!')
+    OpenStruct.new(from: 'caleb@thoughtbot.com', body: 'Hey, Caleb!')
   end
 end

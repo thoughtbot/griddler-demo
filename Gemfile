@@ -15,5 +15,6 @@ gem 'jquery-rails'
 
 gem 'rspec'
 gem 'rspec-rails'
+gem 'capybara'
 
 gem 'griddler'
