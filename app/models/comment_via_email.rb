@@ -4,6 +4,13 @@ class CommentViaEmail
   end
 
   def process
-    Comment.new
+    create_comment
+  end
+
+  private
+  attr_accessor :email
+
+  def create_comment
+    Comment.create(email: email.from, body: email.html_body)
   end
 end
