@@ -106,6 +106,9 @@ GEM
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
+    sanitize (2.0.3)
+      nokogiri (>= 1.4.4, < 1.6)
+      nokogiri (>= 1.4.4, < 1.6)
     sass (3.2.8)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -140,6 +143,7 @@ DEPENDENCIES
   rails (= 3.2.13)
   rspec
   rspec-rails
+  sanitize
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

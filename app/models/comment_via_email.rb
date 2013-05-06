@@ -15,6 +15,10 @@ class CommentViaEmail
   attr_accessor :email
 
   def create_comment
-    Comment.create(email: email.from, body: email.body)
+    Comment.create(email: email.from, body: sanitized_body)
+  end
+
+  def sanitized_body
+    Sanitize.clean(email.body, Sanitize::Config::BASIC)
   end
 end

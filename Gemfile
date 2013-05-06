@@ -18,3 +18,5 @@ gem 'rspec-rails'
 gem 'capybara'
 
 gem 'griddler'
+
+gem 'sanitize'
