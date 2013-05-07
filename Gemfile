@@ -4,21 +4,23 @@ ruby '2.0.0'
 
 gem 'rails', '3.2.13'
 
-gem 'sqlite3'
+group :production do
+  gem 'pg'
+end
+
+group :development, :test do
+  gem 'capybara'
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'sqlite3'
+end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
+  gem 'sass-rails',   '~> 3.2.3'
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-
-gem 'rspec'
-gem 'rspec-rails'
-gem 'capybara'
-
 gem 'griddler'
-
+gem 'jquery-rails'
 gem 'sanitize'
