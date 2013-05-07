@@ -11,4 +11,10 @@ li {
   padding: 20px 40px;
   border: solid 1px black;
   list-style-type: none;
+  display: table;
+}
+
+li img {
+  float: left;
+  margin-right: 50px;
 }

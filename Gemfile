@@ -24,3 +24,4 @@ end
 gem 'griddler'
 gem 'jquery-rails'
 gem 'sanitize'
+gem 'gravatar_image_tag'

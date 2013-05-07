@@ -1,5 +1,6 @@
 <ol>
   <%= content_tag_for(:li, @comments) do |comment| %>
+    <%= gravatar_image_tag comment.email %>
     <%= simple_format comment.body %>
     by <%= partial_email comment.email %>
   <% end %>
