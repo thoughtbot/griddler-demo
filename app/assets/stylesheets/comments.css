@@ -1,0 +1,14 @@
+html, body {
+  background-color: #4B7399;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+li {
+  width: 75%;
+  margin: 14px auto;
+  background-color: white;
+  padding: 20px 40px;
+  border: solid 1px black;
+  list-style-type: none;
+}
