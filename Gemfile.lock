@@ -1,3 +1,18 @@
+GIT
+  remote: git://github.com/thoughtbot/griddler-sendgrid.git
+  revision: 2ccf8b7068bcd1e2dc89d7cfe78b00da7aac2eb8
+  specs:
+    griddler-sendgrid (0.0.1)
+      griddler
+
+GIT
+  remote: git://github.com/thoughtbot/griddler.git
+  revision: 1e380e55e9411cdda2a838aa12ed322cd6090509
+  specs:
+    griddler (0.6.4)
+      htmlentities
+      rails (>= 3.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -48,11 +63,8 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     gravatar_image_tag (1.1.3)
-    griddler (0.5.0)
-      htmlentities
-      rails (>= 3.2.0)
     hike (1.2.2)
-    htmlentities (4.3.1)
+    htmlentities (4.3.2)
     i18n (0.6.1)
     journey (1.0.4)
     jquery-rails (2.2.1)
@@ -141,7 +153,8 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.1)
   gravatar_image_tag
-  griddler
+  griddler!
+  griddler-sendgrid!
   jquery-rails
   pg
   rails (= 3.2.13)

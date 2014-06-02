@@ -7,7 +7,8 @@ gem 'jquery-rails'
 gem 'rails', '3.2.13'
 gem 'sanitize'
 
-gem 'griddler'
+gem 'griddler', github: 'thoughtbot/griddler'
+gem 'griddler-sendgrid', github: 'thoughtbot/griddler-sendgrid'
 
 group :production do
   gem 'pg'
