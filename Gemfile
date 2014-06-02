@@ -2,7 +2,12 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 
+gem 'gravatar_image_tag'
+gem 'jquery-rails'
 gem 'rails', '3.2.13'
+gem 'sanitize'
+
+gem 'griddler'
 
 group :production do
   gem 'pg'
@@ -20,8 +25,3 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'griddler'
-gem 'jquery-rails'
-gem 'sanitize'
-gem 'gravatar_image_tag'
